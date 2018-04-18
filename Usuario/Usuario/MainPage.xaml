@@ -4,8 +4,58 @@
              xmlns:local="clr-namespace:Usuario"
              x:Class="Usuario.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+        <BoxView HeightRequest="100"
+                 BackgroundColor="Aquamarine">
+            
+        </BoxView>
+        <Image Source="git2.png">
+            
+        </Image>
+        <Label Text="Nombre de usuario"
+               TextColor="MediumVioletRed"
+               HorizontalOptions="Center"
+              FontSize="Large">
+            
+        </Label>
+        <TableView Intent="Form" HasUnevenRows="True">
+            <TableSection Title="Datos de usuario"
+                          >
+               
+                <EntryCell x:Name="entryEdad"
+                           Label="Edad: "
+                           Placeholder="Edad">
+                    
+                </EntryCell>
+            </TableSection>
+
+            <TableSection >
+                    <EntryCell x:Name="entryIntereses"
+                           Label="Intereses"
+                           Placeholder="Intereses: ">
+
+                    </EntryCell>
+                    <EntryCell x:Name="entryAprende"
+                           Label="Aprende"
+                           Placeholder="Aprende: ">
+
+                    </EntryCell>
+                </TableSection>
+
+            <TableSection>
+
+                    <EntryCell x:Name="entryOtro"
+                           Label="Otro"
+                           Placeholder="Otro: ">
+
+                    </EntryCell>
+            </TableSection>
+                
+               
+        
+            
+        </TableView>
+    </StackLayout>
+   
 
 </ContentPage>
